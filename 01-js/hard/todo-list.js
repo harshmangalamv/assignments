@@ -10,6 +10,8 @@
   Once you've implemented the logic, test your code by running
 */
 
+// status: passed
+
 class Todo {
   constructor(){
     this.lists = [];
