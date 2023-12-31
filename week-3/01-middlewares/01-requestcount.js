@@ -10,6 +10,14 @@ let requestCount = 0;
 // maintain a count of the number of requests made to the server in the global
 // requestCount variable
 
+// line 13 till 20 are the part of answer -> VERDICT AC
+app.use(middleWare1);
+
+function middleWare1(req, res, next){
+  requestCount++;
+  next();
+}
+
 app.get('/user', function(req, res) {
   res.status(200).json({ name: 'john' });
 });
